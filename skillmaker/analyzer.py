@@ -74,7 +74,9 @@ def analyze_content(content: str, existing_skills: list[SkillSummary]) -> Analys
             )
         }]
     )
-    tool_block = next(b for b in message.content if b.type == "tool_use")
+    tool_block = next((b for b in message.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise RuntimeError("Claude did not return a tool_use block — check your API key and model name")
     data = tool_block.input
     return AnalysisResult(
         adds_value=data["adds_value"],

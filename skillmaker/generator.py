@@ -88,7 +88,9 @@ def generate_skill(
             )
         }]
     )
-    tool_block = next(b for b in message.content if b.type == "tool_use")
+    tool_block = next((b for b in message.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise RuntimeError("Claude did not return a tool_use block — check your API key and model name")
     data = tool_block.input
     refs = [GeneratedRef(slug=r["slug"], content=r["content"]) for r in data.get("refs", [])]
     return GeneratedSkill(

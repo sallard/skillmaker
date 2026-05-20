@@ -32,12 +32,12 @@ Tell the user which path will be used.
 
 For a URL or raw text:
 ```bash
-python -m skillmaker.cli process "<source>" --skills-dir "<skills_dir>"
+skillmaker process "<source>" --skills-dir "<skills_dir>"
 ```
 
 For a PDF:
 ```bash
-python -m skillmaker.cli process --file "<path_to_pdf>" --skills-dir "<skills_dir>"
+skillmaker process --file "<path_to_pdf>" --skills-dir "<skills_dir>"
 ```
 
 ### Step 4: Present the result
@@ -59,7 +59,7 @@ Ask: "Should I write these files to disk at `<skills_dir>`? (yes/no)"
 
 **If yes** - run with --write:
 ```bash
-python -m skillmaker.cli process "<source>" --skills-dir "<skills_dir>" --write
+skillmaker process "<source>" --skills-dir "<skills_dir>" --write
 ```
 Confirm the paths of all written files.
 

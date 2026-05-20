@@ -17,7 +17,7 @@ _TWEET_RE = re.compile(r'(?:twitter\.com|x\.com)/\w+/status/\d+')
 
 
 def detect_content_type(source: str) -> ContentType:
-    if source.endswith('.pdf') and not source.startswith('http'):
+    if source.lower().endswith('.pdf') and not source.startswith('http'):
         return ContentType.PDF
     if _YOUTUBE_RE.search(source):
         return ContentType.YOUTUBE

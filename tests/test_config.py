@@ -33,4 +33,4 @@ def test_config_skills_dir_default(monkeypatch):
     importlib.reload(cfg)
 
     assert "skills" in str(cfg.SKILLS_DIR)
-    assert cfg.CLAUDE_MODEL == "claude-opus-4-7"
+    assert cfg.CLAUDE_MODEL == "claude-sonnet-4-6"

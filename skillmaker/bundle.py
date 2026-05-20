@@ -26,14 +26,20 @@ def format_bundle(skill: GeneratedSkill) -> str:
 
 
 def write_local_files(skill: GeneratedSkill, skills_dir: Path) -> None:
-    skill_dir = skills_dir / skill.slug
+    skills_dir = skills_dir.resolve()
+    skill_dir = (skills_dir / skill.slug).resolve()
+    if not str(skill_dir).startswith(str(skills_dir)):
+        raise ValueError(f"Unsafe skill slug: {skill.slug!r}")
     skill_dir.mkdir(parents=True, exist_ok=True)
     (skill_dir / "index.ts").write_text(skill.index_ts)
     if skill.refs:
         refs_dir = skill_dir / "refs"
         refs_dir.mkdir(exist_ok=True)
         for ref in skill.refs:
-            (refs_dir / f"{ref.slug}.ts").write_text(ref.content)
+            ref_path = (refs_dir / f"{ref.slug}.ts").resolve()
+            if not str(ref_path).startswith(str(refs_dir)):
+                raise ValueError(f"Unsafe ref slug: {ref.slug!r}")
+            ref_path.write_text(ref.content)
 
 
 def _to_camel(kebab: str) -> str:

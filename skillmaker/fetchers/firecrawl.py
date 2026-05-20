@@ -18,4 +18,7 @@ def fetch_with_firecrawl(url: str) -> str:
     data = resp.json()
     if not data.get("success"):
         raise RuntimeError(f"Firecrawl failed for {url}: {data}")
-    return data["data"]["markdown"]
+    md = data.get("data", {}).get("markdown")
+    if not md:
+        raise RuntimeError(f"Firecrawl returned no markdown for {url}: {data}")
+    return md

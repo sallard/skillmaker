@@ -63,3 +63,7 @@ def process(
         typer.echo(f"\nFiles written to: {skills_dir / skill.slug}/")
     else:
         typer.echo("\nRun with --write to save files to disk.")
+
+
+if __name__ == "__main__":
+    app()

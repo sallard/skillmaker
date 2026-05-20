@@ -21,4 +21,4 @@ def fetch_youtube_transcript(url: str) -> str:
     segments = resp.json()
     if not segments:
         raise ValueError(f"Empty transcript for video {video_id}")
-    return " ".join(seg["text"] for seg in segments)
+    return " ".join(seg["text"] for seg in segments if "text" in seg)
