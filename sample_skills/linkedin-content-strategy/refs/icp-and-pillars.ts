@@ -66,6 +66,19 @@ Pick 2-3 recurring topics the algorithm can distribute. Each pillar answers a qu
 
 ---
 
+## The Unique Data Pillar
+
+Find what only you have access to. This is the hardest pillar to copy and the one that builds the most trust.
+
+Examples:
+- "I've coached 300+ founders on LinkedIn. Here is what separates those who build pipeline from those who build followers."
+- "I reviewed 500 cold email campaigns in 2025. Here is what the top 10% had in common."
+- "We ran 40 A/B tests on hooks last quarter. The result surprised us."
+
+The question to ask: "What have I seen, measured, or done that no one else in my niche has seen, measured, or done?" That answer is a pillar.
+
+---
+
 ## What NOT to Post (Universal)
 
 - Generic motivational content (attracts followers, not buyers)

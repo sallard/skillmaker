@@ -1,6 +1,7 @@
 import * as contentDiscoveryRef from './refs/content-discovery'
 import * as icpRef from './refs/icp-and-pillars'
 import * as calendarRef from './refs/calendar-templates'
+import * as algorithmHacksRef from './refs/algorithm-hacks'
 
 export const slug = 'linkedin-content-strategy'
 export const title = 'LinkedIn Content Strategy'
@@ -8,7 +9,7 @@ export const applies_to = ['sales', 'topic_posts', 'calendar']
 export const mode: 'for_generating' | 'for_understanding' | 'mixed' = 'mixed'
 export const triggers = ['content strategy', 'content calendar', 'what to post', 'posting schedule', 'content pillars', 'linkedin growth', 'audience building', 'inbound leads']
 export const token_budget = 400
-export const refs = [contentDiscoveryRef, icpRef, calendarRef]
+export const refs = [contentDiscoveryRef, icpRef, calendarRef, algorithmHacksRef]
 export const body = `
 # LinkedIn Content Strategy
 
@@ -19,6 +20,7 @@ Use LinkedIn as pipeline, not a branding channel. Content pre-answers sales obje
 ## Rules
 
 - Post 3x/week minimum at the same time every day. Repost 6-8h later to reach different-timezone audiences without penalizing reach.
+- Never schedule posts. Scheduled posts consistently underperform manual publishes. Publish manually within a 10-15 minute window each day. Hitting the window matters less than publishing manually.
 - Pick 2-3 content pillars the algorithm can distribute reliably. Straying outside pillars resets distribution.
 - 70/20/10 content split: value (educational/insight), build-in-public, conversion.
 - The 3 compounding content types: milestones with mechanism, honest pivots and decisions, public screwups. Screwups consistently outperform.

@@ -25,6 +25,7 @@ Proven formats to look for:
 - Numbered list with visual: "20 prompts for...", "9 free resources to..."
 - Trend crossover: a trending topic (AI, viral event, new tool) applied specifically to your niche
 - Meme format: "First year doing X vs fifth year doing X", high reach, use sparingly
+- Guest breakdown: feature another person's playbook or framework as a carousel. Borrow their authority while adding your framing. Always credit the source.
 
 ## Step 4, Transpose, don't copy
 
