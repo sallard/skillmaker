@@ -15,17 +15,15 @@ Ask if unclear: "What's your role and what does your ICP care about most?"
 
 ## Tone of Voice
 
-Read refs/tone-octane before writing. Default tone: analytical satirist. Never say something is absurd, show it through a concrete image that makes the verdict obvious without stating it.
+Match tone to the user's voice and ICP. Ask if unclear: "How would you describe your current tone on LinkedIn, or what tone do you want to aim for?"
 
-Quick summary:
-- Hook = an analogy or contradiction that makes the reader smile AND think
-- Body = decode what is really happening behind the official narrative
-- Numbers close arguments, not words
-- Close with a rhetorical question, never a verdict
-- Skeptical but not cynical. Ironic but never aggressive.
-- Never: jargon for show, naive enthusiasm, moralizing conclusions, direct verdicts
-
-Default irony level: 30% (light, one analogy per post). Adjust up to 60% for obviously hollow corporate announcements or generic industry takes.
+Default guidance:
+- Hook = an analogy or contradiction that makes the reader think, not a generic statement
+- Body = specific facts, numbers, and mechanisms, not vague claims
+- Numbers close arguments, not opinions
+- Close with a rhetorical question or clear CTA, never a moralizing verdict
+- Confident but not arrogant. Direct but not aggressive.
+- Never: jargon for show, naive enthusiasm, generic motivational lines, direct verdicts
 
 ---
 
