@@ -73,6 +73,7 @@ See refs/icp-and-pillars for ICP definition framework and pillar examples by ind
 - Best times: 7:30-8:30 AM, 12-1 PM, 5-6 PM (local time)
 - First 60-90 minutes after posting determine 80%+ of reach
 - Consistency beats perfect timing: 3 AM posts can go viral, 10 AM posts can flop
+- **Repost hack**: repost the same post 6-8 hours after publishing — reaches audiences who were offline or in a different time zone without penalizing reach (different people, same algorithm window)
 
 See refs/calendar-templates for 4-week rolling calendar and outbound sync protocol.
 
@@ -99,6 +100,52 @@ Every like, comment, and share is a qualification signal. Capture them.
 - Lead magnet gets 100 comments: deliver resource via DM immediately, follow up in 48 hours, book calls from warm leads
 
 Tools: Prosp (engager extraction), CRM for tracking, DM templates ready before posting.
+
+---
+
+## Content Discovery: Reverse Engineering What Works
+
+The number one reason people fail at LinkedIn is not knowing what great looks like. Before writing anything, build a reference library of what's already working in your niche.
+
+**Step 1 — Find 3-5 successful accounts in your space**
+- Direct competitors posting content
+- Accounts your ICP follows (adjacent niches, same audience)
+- If no direct competitors exist: search by keywords ("video production", "content marketing") and filter by engagement
+
+**Step 2 — Filter for outliers using Scripe**
+- Search by account name or keyword
+- Filter: 300+ likes, last 3 months
+- This surfaces only genuine outliers, not average posts
+
+**Step 3 — Identify patterns**
+Look for recurring formats in the high-performing posts:
+- VS/Comparison posts: "Canon vs iPhone", "B2B vs B2C marketing", "Raw vs polished video"
+- Quadrant/matrix: rank options on two axes (e.g., effort vs. impact)
+- Numbered lists with visual: "20 prompts for...", "9 free resources to..."
+- Trend crossover: take a trending topic (AI, Claude Code, viral event) + apply to your niche
+- Meme format: "First year doing X vs fifth year doing X" (use sparingly, high reach low trust)
+
+**Step 4 — Transpose, don't copy**
+The format is the vehicle. Replace the topic with your own niche:
+- "20 AI prompts for SEO" becomes "20 AI prompts for video production that look like real shoots"
+- "B2B vs B2C marketing gear" becomes "High production vs raw video: when to use each"
+- Add your own social proof inline (client names, revenue figures, years of experience)
+
+**Trust over virality**: if a post outperforms by overhyping or exaggerating ("replace 100k agencies in minutes"), don't replicate it. A long-standing audience beats a spike audience. Optimize for trust, not reach.
+
+---
+
+## Visual Differentiation
+
+LinkedIn's feed is visually mediocre. That's the opportunity, not the problem.
+
+- Most posts are plain text or low-quality images — anything visually polished stops the scroll
+- Images take more feed space than text, increasing visibility passively
+- Emotionally resonant visuals (aesthetically pleasing, funny, or surprising) consistently outperform informational ones
+- Infographics work on LinkedIn specifically because text-first creators haven't invested in them
+- If you produce visual content (video, design, photography): showcase finished work directly in posts — it is your proof of quality and your differentiator simultaneously
+
+**Practical rule**: every post that can have a visual, should. A strong image with a mediocre hook outperforms a strong hook with no image in a visually sparse feed.
 
 ---
 

@@ -38,6 +38,23 @@ The "see more" fold = 275 chars on mobile ,  treat everything before it as your 
 
 ---
 
+## The 2-Line Hook Structure (Universal)
+
+LinkedIn shows 3 lines before the "see more" button. The first 2 are your hook zone. Use both.
+
+**Line 1 — Main hook**: bold claim, curiosity gap, or specific number. Under 12 words.
+
+**Line 2 — Sub-hook**: addresses the reader's first objection to Line 1. This is what converts a "meh, scroll past" into a "see more" click.
+
+*Example*:
+- Line 1: "20 AI prompts for video production"
+- Reader's first objection: "AI video doesn't look real"
+- Line 2: "that will make them look like real shoots"
+
+The sub-hook doesn't add more information — it pre-empts the reason not to click. Ask yourself: "What's the first doubt a reader would have after reading line 1?" Answer that in line 2.
+
+---
+
 ## The 3-Line Hook Anatomy (Lead Magnet Posts)
 
 LinkedIn gives you 3 lines before "see more." These 3 lines determine everything.
