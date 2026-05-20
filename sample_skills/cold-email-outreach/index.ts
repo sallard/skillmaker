@@ -1,6 +1,7 @@
 import * as metricsRef from './refs/metrics-and-deliverability'
 import * as tieringRef from './refs/account-tiering'
 import * as linkedinAdsRef from './refs/linkedin-ads-integration'
+import * as whatsappRef from './refs/whatsapp-outreach'
 
 export const slug = 'cold-email-outreach'
 export const title = 'Cold Email Outreach'
@@ -8,7 +9,7 @@ export const applies_to = ['sales', 'gmail']
 export const mode: 'for_generating' | 'for_understanding' | 'mixed' = 'mixed'
 export const triggers = ['cold email', 'outreach', 'reply rate', 'list building', 'buying signal', 'deliverability', 'email sequence', 'personalization']
 export const token_budget = 450
-export const refs = [tieringRef, metricsRef, linkedinAdsRef]
+export const refs = [tieringRef, metricsRef, linkedinAdsRef, whatsappRef]
 export const body = `
 # Cold Email Outreach
 
