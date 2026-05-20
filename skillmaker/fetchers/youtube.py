@@ -2,7 +2,7 @@ import httpx
 from skillmaker.config import RAPIDAPI_KEY
 from skillmaker.fetchers.detect import extract_youtube_id
 
-_API_HOST = "youtube-transcriptor.p.rapidapi.com"
+_API_HOST = "youtube-video-summarizer-gpt-ai.p.rapidapi.com"
 _API_URL = f"https://{_API_HOST}/transcript"
 
 
