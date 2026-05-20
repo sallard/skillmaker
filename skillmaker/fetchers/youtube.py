@@ -18,8 +18,21 @@ def fetch_youtube_transcript(url: str) -> str:
         timeout=30.0,
     )
     resp.raise_for_status()
-    data = resp.json()
-    text = data.get("transcript") or data.get("summary") or data.get("text", "")
+    payload = resp.json()
+
+    # Nested format: {"data": {"transcripts": {"<lang>": {"custom": [{"text": "..."}]}}}}
+    inner = payload.get("data", payload)
+    transcripts = inner.get("transcripts", {})
+    if transcripts:
+        lang_data = next(iter(transcripts.values()))
+        segments = lang_data.get("custom") or lang_data.get("segments", [])
+        if segments:
+            title = inner.get("videoInfo", {}).get("name", "")
+            body = " ".join(s["text"] for s in segments if s.get("text"))
+            return f"{title}\n\n{body}".strip() if title else body
+
+    # Flat format fallback: {"transcript": "...", "summary": "..."}
+    text = inner.get("transcript") or inner.get("summary") or inner.get("text", "")
     if not text:
         raise ValueError(f"Empty transcript for video {video_id}")
     return text
