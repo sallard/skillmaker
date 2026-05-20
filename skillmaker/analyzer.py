@@ -1,12 +1,7 @@
-import types as _types
-import anthropic as _anthropic_module
+import anthropic
 from dataclasses import dataclass, field
 from skillmaker.config import ANTHROPIC_API_KEY, CLAUDE_MODEL
 from skillmaker.skills_db import SkillSummary
-
-# Create a module-local namespace for anthropic so this module's Anthropic
-# reference can be patched independently from skillmaker.generator's reference.
-anthropic = _types.SimpleNamespace(Anthropic=_anthropic_module.Anthropic)
 
 _ANALYZE_TOOL = {
     "name": "analyze_content",

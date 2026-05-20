@@ -58,10 +58,10 @@ def test_blog_url_full_pipeline_no_write(tmp_path):
     respx.post("https://api.firecrawl.dev/v1/scrape").mock(
         return_value=httpx.Response(200, json=_FIRECRAWL_RESPONSE)
     )
-    with patch("skillmaker.analyzer.anthropic.Anthropic",
-               return_value=_mock_anthropic_client(_ANALYSIS_TOOL_RESULT)), \
-         patch("skillmaker.generator.anthropic.Anthropic",
-               return_value=_mock_anthropic_client(_GENERATE_TOOL_RESULT)):
+    with patch("anthropic.Anthropic", side_effect=[
+        _mock_anthropic_client(_ANALYSIS_TOOL_RESULT),
+        _mock_anthropic_client(_GENERATE_TOOL_RESULT),
+    ]):
         result = runner.invoke(app, [
             "process", "https://example.com/blog/cold-email-openers",
             "--skills-dir", str(tmp_path),
@@ -78,10 +78,10 @@ def test_blog_url_full_pipeline_with_write(tmp_path):
     respx.post("https://api.firecrawl.dev/v1/scrape").mock(
         return_value=httpx.Response(200, json=_FIRECRAWL_RESPONSE)
     )
-    with patch("skillmaker.analyzer.anthropic.Anthropic",
-               return_value=_mock_anthropic_client(_ANALYSIS_TOOL_RESULT)), \
-         patch("skillmaker.generator.anthropic.Anthropic",
-               return_value=_mock_anthropic_client(_GENERATE_TOOL_RESULT)):
+    with patch("anthropic.Anthropic", side_effect=[
+        _mock_anthropic_client(_ANALYSIS_TOOL_RESULT),
+        _mock_anthropic_client(_GENERATE_TOOL_RESULT),
+    ]):
         result = runner.invoke(app, [
             "process", "https://example.com/blog/cold-email-openers",
             "--skills-dir", str(tmp_path),
@@ -105,8 +105,7 @@ def test_blog_url_no_value_stops_cleanly(tmp_path):
         "action": "no_action",
         "key_insights": [],
     }
-    with patch("skillmaker.analyzer.anthropic.Anthropic",
-               return_value=_mock_anthropic_client(no_value_result)):
+    with patch("anthropic.Anthropic", return_value=_mock_anthropic_client(no_value_result)):
         result = runner.invoke(app, [
             "process", "https://example.com/blog/generic-email-tips",
             "--skills-dir", str(tmp_path),
