@@ -1,61 +1,91 @@
 export const slug = 'calendar-templates'
 export const triggers = {
-  keywords: ['calendar', 'templates']
+  keywords: ['calendar', 'templates', 'schedule', 'weekly', 'posting schedule', 'content plan']
 }
 export const body = `
 # Content Calendar Templates
 
 ## 4-Week Rolling Calendar Template
 
-### Week Structure (3-4 posts)
+### Weekly Structure (3-4 posts)
 
-| Slot | Day | Funnel | Pillar | Format | Template |
-|---|---|---|---|---|---|
-| 1 | Tuesday | TOF | Pillar 1 or 3 | Text or Carousel | A or B |
-| 2 | Wednesday | TOF | Any | Text | E or Contrarian |
-| 3 | Thursday | MOF/BOF | Pillar 1 or 2 | Text or Carousel | C or D |
-| 4 | Friday (optional) | MOF | Pillar 2 | Text | D (comment-gate) |
+| Slot | Day | Funnel | Type | Format |
+|---|---|---|---|---|
+| 1 | Tuesday | TOF | Authority / Insight | Text or Carousel |
+| 2 | Wednesday | TOF | Contrarian Take / Story | Text |
+| 3 | Thursday | MOF/BOF | Case Study / Lead Magnet | Text or Carousel |
+| 4 | Friday (optional) | MOF | Comment-gated resource | Text |
+
+**Scheduling rules**:
+- Space lead magnets 2-3 days apart (comment spikes need time to convert)
+- Follow a high-engagement post with a related deep-dive
+- Never repeat the same topic 3x in a row
+- Alternate tactical and strategic posts
+- 1 lead magnet per 7 posts maximum
 
 ---
 
-## 4-Week Sample Plan (CAIO at YKONE)
+## 4-Week Cycle (Awareness-Matched)
 
-### Week 1 ,  Establish Authority
-- Tue: **[TOF/A]** Breakdown: "How AI Changed Our Influencer Vetting Process" (specific numbers, 8 steps)
-- Wed: **[TOF/Contrarian]** Take: "The influencer authenticity problem is a measurement problem, not a people problem"
-- Thu: **[MOF/C]** Case study: Fashion brand, before/after AI (no client name, numbers only)
+Match content to where your audience is in their awareness journey. Rotate every 4 weeks so new followers go through the full journey.
 
-### Week 2 ,  Build Trust / Relatability
-- Tue: **[TOF/B]** Listicle: "5 things I got wrong about deploying AI in an agency"
-- Wed: **[TOF/E]** Story: A moment where AI surprised us (vulnerability angle)
-- Thu: **[MOF/D]** Comment-gate: AI influencer scoring playbook (drive leads)
+### Week 1, Problem Awareness
+Goal: Educate on problems they didn't know they had. Agitate existing pain points.
+- Tue: Breakdown of a hidden cost or risk your ICP doesn't realize they're paying
+- Wed: Contrarian take that challenges a common assumption in your market
+- Thu: Data point or case showing the gap between where they are and where they could be
 
-### Week 3 ,  Market Intelligence / Industry Angle
-- Tue: **[TOF/B]** Observations: "What luxury brands get wrong about AI right now"
-- Wed: **[TOF/Contrarian]** Take on EU AI regulation + luxury marketing
-- Thu: **[BOF/C]** Results post: campaign efficiency numbers, what AI made possible
+### Week 2, Solution Awareness
+Goal: Introduce your unique mechanism. Show how it differs from alternatives.
+- Tue: "Most [ICP] solve [problem] by doing X. Here's why that doesn't work and what does."
+- Wed: Build-in-public: a decision you made and why, including what you ruled out
+- Thu: Head-to-head honest comparison (your approach vs. common alternatives)
 
-### Week 4 ,  ICP Direct Address / Conversion
-- Tue: **[MOF/A]** Breakdown: Full AI stack for influencer marketing (technical but accessible)
-- Wed: **[TOF/E]** Build-in-public: Decision we made this month + outcome
-- Thu: **[BOF]** Offer-adjacent: "How we help brands [X]" framed as insight
+### Week 3, Product/Service Awareness
+Goal: Demonstrate your offer in action with specifics.
+- Tue: Specific use case or workflow showing how you solve the problem
+- Wed: Customer result or transformation (numbers only, no client name needed)
+- Thu: FAQ or objection post, the most common question you get, answered in full
+
+### Week 4, Conversion Push
+Goal: Drive action from warm audience.
+- Tue: Lead magnet (comment-gated resource tied to your core pillar)
+- Wed: Multiple social proof signals (results, testimonials, milestones)
+- Thu: Offer-adjacent insight: "How we help [ICP] achieve [outcome]" framed as education
 
 ---
 
 ## Outbound Sync Protocol
 
-**Rule**: Content calendar should mirror outbound targeting.
+**Rule**: Mirror your content calendar to your outbound targeting that week.
 
-When running campaigns to → post content about:
-- CMOs at luxury brands → Post about CMO-level AI decisions, ROI, board conversations
-- Heads of Influencer → Post about influencer ops, vetting, measurement
-- Agency leaders → Post about build vs. buy, org change, deployment lessons
+**Why it works**: A prospect who has seen 5+ relevant posts before receiving your email is 5x more likely to reply. Content pre-warms every outbound sequence.
 
-**Why**: A prospect who has seen 5+ relevant posts before receiving your email is 5x more likely to reply. Content pre-warms every outbound sequence.
+**How to sync**:
+1. Identify which ICP segment you're actively prospecting this week
+2. That same week, post content directly addressing that segment's biggest problem
+3. In outbound emails, reference the insight (not the post itself, the idea)
+4. Warm signal: prospect engages with your post, prioritize them in follow-up
 
-**Tactical sync**:
-1. Start outbound sequence targeting segment X
-2. Same week, post content directly relevant to segment X's biggest problem
-3. In the outbound email, reference the post or the insight (not the post itself ,  the idea)
-4. Warm signal = prospect engages wit
+**Examples by segment**:
+- Targeting VP Sales at mid-market SaaS, post about pipeline conversion problems this week
+- Targeting Agency Owners, post about client retention or margin pressure this week
+- Targeting HR Directors, post about hiring cost or onboarding failures this week
+
+---
+
+## Repurposing Tracker
+
+1 source piece per week fuels everything else. 30-60 min writing once = 7+ pieces of content.
+
+| Original | Repurpose 1 | Repurpose 2 | Repurpose 3 | Wait time |
+|---|---|---|---|---|
+| Long text post | Carousel (same idea) | Newsletter section | Video script | Carousel: immediate; same format: 2-4 weeks |
+| Newsletter | 3-4 text posts | 1 carousel | 1 comment-gate | Immediate for cross-format |
+| Sales call insight | Text post (anonymized) | Carousel framework | Comment-gate guide | Immediate |
+| Case study | Results post | Carousel slides | Comment-gate offer | Immediate |
+
+Best posts deserve 5x repurposing. Identify them by: saves > 50, comments > 30, or DMs received.
+
+Rewrite the hook every time. Same idea, new entry point. Content doesn't need to be new, just new to the viewer.
 `

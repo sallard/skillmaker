@@ -1,71 +1,77 @@
 export const slug = 'icp-and-pillars'
 export const triggers = {
-  keywords: ['icp', 'pillars']
+  keywords: ['icp', 'pillars', 'ideal customer', 'content pillars', 'audience', 'target']
 }
 export const body = `
-# ICP Definition & Content Pillars (YKONE CAIO)
+# ICP Definition & Content Pillars
 
-## Ideal Customer Profile
+## Step 1, Define Your ICP
 
-**Primary ICP**:
-- Role: CMO, VP Marketing, Head of Influencer Marketing
-- Industry: Luxury fashion, beauty, lifestyle (brands €50M+ revenue)
-- Geography: France, Europe (Paris-heavy), with US secondary
-- Problem: AI feels like a threat or black box; influencer measurement is broken; campaigns are slow and expensive to execute
-- Dream outcome: Measurable ROI on influencer, faster execution, AI as competitive advantage
+Content is only effective when written for ONE specific buyer. Define before writing anything.
 
-**Secondary ICP** (shares content with primary):
-- Agency operators and managers who surface content upward
-- Investors / PE looking at influencer marketing category
-- Other Chief AI Officers / AI leads at agencies
+**ICP fields to fill in**:
+- Role: [specific job title, not a department]
+- Industry: [specific vertical, not "B2B"]
+- Company size: [headcount or revenue range]
+- Geography: [primary market, secondary market]
+- Core problem: [what keeps them up at night, in their words]
+- Dream outcome: [what success looks like to them in 90 days]
+- Decision trigger: [what makes them act now vs. later]
 
-**Content built for**: Primary ICP (CMOs, luxury brand decision-makers). Secondary ICP shares upward.
+**Test for ICP validity**: Can you name 5 real people who fit this profile? If not, it's too broad.
 
----
+**Secondary ICP** (receives and shares content with primary):
+- Who influences or amplifies your primary buyer?
+- Who does your primary buyer forward your content to?
 
-## Pillar 1 ,  AI in Luxury & Fashion Marketing
-
-**Core question this answers**: "What is AI actually doing to campaigns and influencer marketing right now?"
-
-Content angles:
-- How AI is changing influencer selection and vetting
-- What luxury brands get wrong about AI (myth-busting)
-- Case studies: AI-assisted campaigns vs. manual (numbers)
-- The influencer authenticity problem is a measurement problem
-- AI scoring models vs. gut instinct ,  what the data shows
-- Speed: what used to take days now takes hours
-- The human role after AI (strategist vs. operator)
-
-Tone: Informed insider, seen the data, sharing what others won't
+Content should be written for the primary ICP. Secondary ICP shares upward or sideways.
 
 ---
 
-## Pillar 2 ,  AI Strategy & Agency Leadership
+## Step 2, Choose Your Content Pillars
 
-**Core question this answers**: "How do you actually deploy AI inside an agency without losing what makes you good?"
+Pick 2-3 recurring topics the algorithm can distribute. Each pillar answers a question your ICP is actively asking.
 
-Content angles:
-- Build vs. buy AI decisions (and when each is wrong)
-- What happened when we deployed AI across influencer ops (honest)
-- The org changes no one talks about
-- Mistakes made in AI implementation
-- How to pitch AI internally to leadership skeptics
-- What AI can't do in luxury marketing (and why that matters)
-- Lessons from 3 years of AI in production
+**Pillar validation test**: "Would my ICP share this post with a colleague?" If yes, it belongs.
 
-Tone: Leader who has done it, not consultant who advises it
+**Pillar structure per topic**:
+- Core question this pillar answers
+- 5-7 specific content angles within it
+- Tone (insider/expert/builder/observer)
+- What NOT to post in this pillar (common mistakes in your niche)
 
 ---
 
-## Pillar 3 ,  Industry Intelligence
+## Pillar Examples by Company Type
 
-**Core question this answers**: "What should luxury/fashion marketers know about where this is all going?"
+### SaaS / B2B Software Founder
+**Pillar 1, Product mechanics**: What you built, why you built it that way, what you killed
+**Pillar 2, Market insight**: What the category gets wrong, where it's heading, contrarian data
+**Pillar 3, Build-in-public**: Revenue milestones, hiring decisions, pivots, what failed
 
-Content angles:
-- Influencer market shifts (platform, regulation, authenticity fatigue)
-- AI regulation in EU and what it means for marketing
-- Luxury brand behavior in down markets
-- Gen Z vs. Millennial luxury consumption ,  what the data says
-- Creator economy consolidation
-- What agencies tha
+### Agency / Consultancy Leader
+**Pillar 1, Methodology**: How you work, frameworks you use, what makes your approach different
+**Pillar 2, Client outcomes**: Specific results (no client name needed, just numbers), before/after
+**Pillar 3, Industry intelligence**: Market shifts, what's dying, what's emerging in your niche
+
+### Enterprise Executive / Director
+**Pillar 1, Leadership decisions**: Real choices made, trade-offs, what you'd do differently
+**Pillar 2, Function expertise**: Deep knowledge of your domain (ops, finance, marketing, etc.)
+**Pillar 3, Industry patterns**: What peers are getting wrong, what the data shows
+
+### Solo Expert / Advisor
+**Pillar 1, Contrarian expertise**: What the mainstream advice gets wrong in your domain
+**Pillar 2, System breakdowns**: Step-by-step frameworks your ICP can use immediately
+**Pillar 3, Proof of work**: Milestones, client wins, experiments with results
+
+---
+
+## What NOT to Post (Universal)
+
+- Generic motivational content (attracts followers, not buyers)
+- Content only practitioners in your field understand (wrong ICP)
+- Self-congratulatory announcements without substance
+- Vague thought leadership ("the future of X is here")
+- Content that sounds like a press release
+- Tips that apply to everyone (applies to no one)
 `
