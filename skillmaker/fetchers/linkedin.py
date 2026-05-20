@@ -12,9 +12,9 @@ def fetch_linkedin_post(url: str) -> str:
         timeout=30.0,
     )
     resp.raise_for_status()
-    data = resp.json()
-    text = data.get("text", "")
+    element = resp.json().get("element", {})
+    text = element.get("content", "")
     if not text:
         raise ValueError(f"Empty post returned for {url}")
-    author = data.get("author", {}).get("name", "Unknown")
+    author = element.get("author", {}).get("name", "Unknown")
     return f"Author: {author}\n\n{text}"
