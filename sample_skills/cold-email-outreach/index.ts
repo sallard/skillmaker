@@ -1,5 +1,6 @@
 import * as metricsRef from './refs/metrics-and-deliverability'
 import * as tieringRef from './refs/account-tiering'
+import * as linkedinAdsRef from './refs/linkedin-ads-integration'
 
 export const slug = 'cold-email-outreach'
 export const title = 'Cold Email Outreach'
@@ -7,7 +8,7 @@ export const applies_to = ['sales', 'gmail']
 export const mode: 'for_generating' | 'for_understanding' | 'mixed' = 'mixed'
 export const triggers = ['cold email', 'outreach', 'reply rate', 'list building', 'buying signal', 'deliverability', 'email sequence', 'personalization']
 export const token_budget = 450
-export const refs = [tieringRef, metricsRef]
+export const refs = [tieringRef, metricsRef, linkedinAdsRef]
 export const body = `
 # Cold Email Outreach
 
@@ -21,7 +22,8 @@ The only goal of a cold email is to get a reply. Not a sale. Not a demo booking.
 - Under 80 words, 4 lines maximum. Line 1: specific observation. Lines 2-3: connect to a concrete problem. Line 4: simple yes/no question.
 - Never sell in the cold email. Email earns a reply, reply earns a conversation, conversation earns the sale.
 - Respond to positive replies within minutes. Route to Slack or your phone. Prospect interest peaks when they reply.
-- Use secondary sending domains only. Warm up every inbox 30+ days. Max 30 emails per inbox per day.
+- Use secondary sending domains only. Warm up every inbox 30+ days. Max 30 emails per inbox per day. Disable open tracking pixels.
+- LinkedIn Ads running before cold email increases reply rates 25-40%. Add LinkedIn Ads when cold email is working and budget allows $3k+/month. See refs for the full playbook.
 - Iterate by segment: open rate, reply rate, contact-to-lead, bounce rate each diagnose a different problem.
 
 ## Anti-patterns
@@ -33,11 +35,4 @@ The only goal of a cold email is to get a reply. Not a sale. Not a demo booking.
 - Treating list-building as one-time setup instead of ongoing signal detection
 - Measuring success by open rate alone. Opens without replies means the copy is not landing.
 
-## 4-Line Formula
-
-Line 1: Specific observation about their situation
-Lines 2-3: Connect to a concrete problem or opportunity
-Line 4: Simple yes/no question
-
-11% reply rate for a recruiting SaaS using this 4-sentence structure.
 `

@@ -48,6 +48,9 @@ These are table stakes. Skip any one of them and your emails land in spam regard
 - Maximum 30 emails per inbox per day
 - Use multiple inboxes and rotate across them for higher volume
 - Spread sends across the day, do not send 30 emails at 9am
+- Disable open tracking pixels in your sending tool. Tracking pixels trigger spam filters and inflate open rate metrics.
+
+**Delivery rate baseline**: Even with perfect infrastructure, cold email delivers to 60-70% of recipients on average. Some emails land in promotions or spam regardless of setup. This is baseline, not a failure signal. Optimize deliverability to push toward the top of that range, not to eliminate it entirely.
 
 **Ongoing hygiene**:
 - Monitor bounce rate continuously, above 3% signals a data quality problem
