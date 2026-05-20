@@ -3,7 +3,7 @@ from skillmaker.config import RAPIDAPI_KEY
 from skillmaker.fetchers.detect import extract_youtube_id
 
 _API_HOST = "youtube-video-summarizer-gpt-ai.p.rapidapi.com"
-_API_URL = f"https://{_API_HOST}/transcript"
+_API_URL = f"https://{_API_HOST}/api/v1/get-transcript-v2"
 
 
 def fetch_youtube_transcript(url: str) -> str:
@@ -14,11 +14,12 @@ def fetch_youtube_transcript(url: str) -> str:
             "x-rapidapi-host": _API_HOST,
             "x-rapidapi-key": RAPIDAPI_KEY,
         },
-        params={"video_id": video_id, "lang": "en"},
+        params={"video_id": video_id, "platform": "youtube"},
         timeout=30.0,
     )
     resp.raise_for_status()
-    segments = resp.json()
-    if not segments:
+    data = resp.json()
+    text = data.get("transcript") or data.get("summary") or data.get("text", "")
+    if not text:
         raise ValueError(f"Empty transcript for video {video_id}")
-    return " ".join(seg["text"] for seg in segments if "text" in seg)
+    return text

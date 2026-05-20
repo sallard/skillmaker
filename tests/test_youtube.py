@@ -4,16 +4,25 @@ from unittest.mock import patch, MagicMock
 from skillmaker.fetchers.youtube import fetch_youtube_transcript
 
 
-def test_returns_joined_transcript():
+def test_returns_transcript_field():
     mock_response = MagicMock()
-    mock_response.json.return_value = [
-        {"text": "Hello world.", "start": 0.0},
-        {"text": "This is a test.", "start": 2.5},
-    ]
+    mock_response.json.return_value = {
+        "transcript": "Hello world. This is a test.",
+        "summary": "A brief greeting and test.",
+    }
 
     with patch("skillmaker.fetchers.youtube.httpx.get", return_value=mock_response):
         result = fetch_youtube_transcript("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         assert result == "Hello world. This is a test."
+
+
+def test_falls_back_to_summary_when_no_transcript():
+    mock_response = MagicMock()
+    mock_response.json.return_value = {"summary": "A brief greeting and test."}
+
+    with patch("skillmaker.fetchers.youtube.httpx.get", return_value=mock_response):
+        result = fetch_youtube_transcript("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        assert result == "A brief greeting and test."
 
 
 def test_raises_on_http_error():
@@ -25,9 +34,9 @@ def test_raises_on_http_error():
             fetch_youtube_transcript("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 
-def test_raises_on_empty_transcript():
+def test_raises_on_empty_response():
     mock_response = MagicMock()
-    mock_response.json.return_value = []
+    mock_response.json.return_value = {}
 
     with patch("skillmaker.fetchers.youtube.httpx.get", return_value=mock_response):
         with pytest.raises(ValueError, match="Empty transcript"):
