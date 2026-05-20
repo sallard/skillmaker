@@ -28,6 +28,7 @@ def test_config_skills_dir_default(monkeypatch):
     monkeypatch.setenv("HARVEST_API_KEY", "x")
     monkeypatch.delenv("SKILLS_DIR", raising=False)
     monkeypatch.delenv("CLAUDE_MODEL", raising=False)
+    monkeypatch.setattr("dotenv.load_dotenv", lambda **kwargs: None)
 
     import skillmaker.config as cfg
     importlib.reload(cfg)
