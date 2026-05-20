@@ -1,7 +1,7 @@
 export const slug = 'engagement-data'
-export const triggers = {
-  keywords: ['engagement', 'benchmarks', 'performance', 'metrics', 'reactions', 'comments', 'reach']
-}
+export const title = 'Engagement Data & Benchmarks'
+export const triggers = ['engagement', 'benchmarks', 'performance', 'metrics', 'reactions', 'comments', 'reach']
+export const token_budget = 800
 export const body = `
 # Engagement Data & Benchmarks
 
@@ -43,7 +43,7 @@ Not every post needs all 5. Know which levers are active in each post.
 
 ---
 
-## High-Signal Post Pattern (from ColdIQ analysis, 2.3% of posts, 11,300+ interactions)
+## High-Signal Post Pattern (top 2.3% of posts, 11,300+ interactions)
 
 4 commonalities in breakout posts:
 1. Hook = bold claim + specific number (2x engagement vs. no numbers)

@@ -1,7 +1,7 @@
 export const slug = 'metrics-and-deliverability'
-export const triggers = {
-  keywords: ['metrics', 'deliverability', 'open rate', 'reply rate', 'bounce', 'spf', 'dkim', 'dmarc', 'warm up', 'sending', 'infrastructure', 'benchmarks']
-}
+export const title = 'Metrics, Benchmarks & Deliverability'
+export const triggers = ['deliverability', 'metrics', 'open rate', 'reply rate', 'bounce rate', 'spf', 'dkim', 'warm up']
+export const token_budget = 900
 export const body = `
 # Metrics, Benchmarks & Deliverability
 
@@ -57,8 +57,6 @@ These are table stakes. Skip any one of them and your emails land in spam regard
 ---
 
 ## Recommended Tool Stack
-
-These tools were validated at scale by ColdIQ from 1 lead per 4,000 emails to $7M ARR:
 
 | Tool | Role |
 |---|---|

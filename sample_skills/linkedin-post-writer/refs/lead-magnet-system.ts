@@ -1,7 +1,7 @@
 export const slug = 'lead-magnet-system'
-export const triggers = {
-  keywords: ['lead magnet', 'comment gate', 'giveaway', 'resource', 'dm follow-up', 'ideation']
-}
+export const title = 'Lead Magnet Production System'
+export const triggers = ['lead magnet', 'comment gate', 'giveaway', 'resource', 'dm follow-up', 'ideation']
+export const token_budget = 1200
 export const body = `
 # Lead Magnet Production System
 

@@ -1,7 +1,7 @@
 export const slug = 'icp-and-pillars'
-export const triggers = {
-  keywords: ['icp', 'pillars', 'ideal customer', 'content pillars', 'audience', 'target']
-}
+export const title = 'ICP Definition & Content Pillars'
+export const triggers = ['icp', 'pillars', 'ideal customer', 'content pillars', 'audience', 'target']
+export const token_budget = 800
 export const body = `
 # ICP Definition & Content Pillars
 

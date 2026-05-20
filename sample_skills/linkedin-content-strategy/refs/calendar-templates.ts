@@ -1,7 +1,7 @@
 export const slug = 'calendar-templates'
-export const triggers = {
-  keywords: ['calendar', 'templates', 'schedule', 'weekly', 'posting schedule', 'content plan']
-}
+export const title = 'Content Calendar Templates'
+export const triggers = ['calendar', 'templates', 'schedule', 'weekly', 'posting schedule', 'content plan']
+export const token_budget = 1000
 export const body = `
 # Content Calendar Templates
 
