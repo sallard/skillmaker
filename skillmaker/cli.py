@@ -7,6 +7,7 @@ from skillmaker.skills_db import read_all_skills
 from skillmaker.analyzer import analyze_content
 from skillmaker.generator import generate_skill
 from skillmaker.bundle import format_bundle, write_local_files
+from skillmaker.converter import convert_skill_md
 
 app = typer.Typer(help="SkillMaker: generate TypeScript kb skills from any content source.")
 
@@ -63,6 +64,32 @@ def process(
         typer.echo(f"\nFiles written to: {skills_dir / skill.slug}/")
     else:
         typer.echo("\nRun with --write to save files to disk.")
+
+
+@app.command()
+def convert(
+    skill_dir: Path = typer.Argument(..., help="Directory containing SKILL.md to convert"),
+    write: bool = typer.Option(False, "--write", help="Write index.ts and refs/*.ts to disk"),
+):
+    """Convert a Markdown SKILL.md skill into TypeScript index.ts format."""
+    if not (skill_dir / "SKILL.md").exists():
+        typer.echo(f"Error: no SKILL.md found in {skill_dir}", err=True)
+        raise typer.Exit(1)
+
+    skill = convert_skill_md(skill_dir)
+    bundle = format_bundle(skill)
+
+    typer.echo("=" * 60)
+    typer.echo("CONVERTED BUNDLE:")
+    typer.echo("=" * 60)
+    typer.echo(bundle)
+    typer.echo("=" * 60)
+
+    if write:
+        write_local_files(skill, skill_dir.parent)
+        typer.echo(f"\nFiles written to: {skill_dir}/")
+    else:
+        typer.echo("\nRun with --write to save TypeScript files to disk.")
 
 
 if __name__ == "__main__":

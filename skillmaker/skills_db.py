@@ -46,7 +46,7 @@ def parse_skill_file(content: str, path: Path = Path(".")) -> SkillSummary:
 
 # ── Markdown SKILL.md format ──────────────────────────────────────────────────
 
-def _parse_frontmatter(content: str) -> tuple[dict[str, str], str]:
+def parse_frontmatter(content: str) -> tuple[dict[str, str], str]:
     m = re.match(r"^---\n([\s\S]*?)\n---\n([\s\S]*)$", content.strip())
     if not m:
         return {}, content
@@ -59,7 +59,7 @@ def _parse_frontmatter(content: str) -> tuple[dict[str, str], str]:
 
 
 def parse_skill_md(content: str, path: Path = Path(".")) -> SkillSummary:
-    meta, body = _parse_frontmatter(content)
+    meta, body = parse_frontmatter(content)
     slug = meta.get("name", path.parent.name)
     description = meta.get("description", "")
     words = re.findall(r"\b[a-z][a-z_]{2,}\b", description.lower())
