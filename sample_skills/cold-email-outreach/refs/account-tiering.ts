@@ -29,6 +29,7 @@ Build signal combinations by pulling from job boards, review sites, and social p
 Once you have your warm segments, map every company that fits your ICP. This is your total addressable market.
 
 Rules:
+- Maintain a blocklist: past clients, existing clients, competitors, and companies you have already contacted in active sequences. Clean every new list against it before launch.
 - Deduplicate before every campaign. Reaching the same person twice from different sequences kills sender reputation.
 - Refresh every quarter. 15-20% of list data decays per quarter (companies change, leadership shifts, organizations close).
 - Filter account lists by company size, geography, industry, revenue, and tech stack using enrichment providers.
@@ -69,6 +70,17 @@ Value-first opening strategy: think about what you would do in week 1 if you sig
 Tier 3 is the experimental playground.
 
 Run 4-5 message variations simultaneously. Test copywriting frameworks, subject lines, CTAs, and offer angles. Let reply rates tell you what works. What converts at Tier 3 gets refined and promoted to Tier 2 sequences.
+
+## Awareness-Level Sequencing
+
+Not all prospects on your list are equally cold. Segment by awareness and build separate sequences for each:
+
+- **Cold prospects**: standard 3-touch outbound sequence
+- **Brand-aware prospects** (engaged with your content, visited your site, seen your ads): shorter sequence, reference the prior touchpoint, move faster to the ask
+- **Re-engagement** (ghosted past campaigns, lost deals, old contacts): acknowledge the gap, lead with what has changed, do not repeat the original pitch
+- **High-intent** (active signals like pricing page visit, demo request, champion job change): skip the warm-up steps, go directly to a meeting ask
+
+Running the same sequence for all four segments wastes the intent signal and dilutes results.
 
 ## Pre-Warming Before Outreach
 
