@@ -41,7 +41,22 @@ Manual writing forces you to notice patterns: which angles get replies, which jo
 
 Then extract: take the winning angles and data points and turn them into enrichment variables for automated personalization. This is how manual work becomes scale. Personalization across 1,000 prospects feels 1:1 because it was born from 1:1 work. Skipping this means scaling assumptions, not proven approaches.
 
-Channels: phone, LinkedIn, email, all coordinated around the same account.
+**Typical Tier 1 sequence (10-14 days):**
+- Day 1: Personalized email referencing a specific signal or piece of research
+- Day 2: LinkedIn connection request with a brief personalized note
+- Day 4: Follow-up email if no response
+- Day 6-7: Cold call
+- Day 9-10: Final email or LinkedIn message with a clear close
+
+Mix automated steps (emails) with manual steps (calls, LinkedIn DMs). Manual steps signal genuine intent.
+
+**Cold calling in the cadence:**
+- Research before every call. Know one specific reason you are calling: a recent signal, a job change, a relevant challenge.
+- Use a script as a guide, not a script to read. The goal is a real conversation, not a recitation.
+- First call goal is discovery, not a sale. Determine fit and book a deeper conversation.
+
+**Direct mail for Tier 1:**
+Physical mail cuts through digital noise for the highest-value accounts. Be creative: personalized gift, handwritten note, relevant item. Follow up with a digital touch referencing what you sent within 24 hours. Time the digital follow-up to delivery confirmation.
 
 ## Tier 2, AI-Personalized Multichannel (Good Fits)
 
