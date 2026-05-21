@@ -36,9 +36,4 @@ Getting the click is half the battle. The landing page must deliver on the ad's 
 
 LinkedIn Ads take 60 days to reach consistent results. Set up first, then wait. Speed to pipeline from LinkedIn Ads is 8-12 weeks. From cold email it is 1-7 days.
 
-## LinkedIn Ads Tool Stack
-
-- Creatives: Figma for static and Document Ads, CapCut for short-form video and UGC clips
-- Lead routing: Default for lead-to-CRM matching, Zapier for LinkedIn Lead Gen Forms
-- Attribution: Fibbler for LinkedIn-to-CRM attribution, Usermaven for conversion tracking
 `

@@ -25,7 +25,7 @@ Use LinkedIn as pipeline, not a branding channel. Content pre-answers sales obje
 - 70/20/10 content split: value (educational/insight), build-in-public, conversion.
 - The 3 compounding content types: milestones with mechanism, honest pivots and decisions, public screwups. Screwups consistently outperform.
 - Profile converts more than posts. Most conversions happen on profile visits triggered by posts, not the post itself. Optimize headline and about section first.
-- Before writing, find what works. Filter 3-5 niche accounts in Scripe by 300+ likes, last 3 months. Transpose proven formats to your niche, do not copy.
+- Before writing, find what works. Filter 3-5 niche accounts by 300+ likes, last 3 months. Transpose proven formats to your niche, do not copy.
 - Every like and comment is a pipeline signal. Extract engagers, filter for ICP, route to DM sequence referencing the post.
 - LinkedIn's visually poor feed is the opportunity. Any quality infographic or video stops the scroll more than on any other B2B channel.
 

@@ -41,7 +41,7 @@ These are table stakes. Skip any one of them and your emails land in spam regard
 
 **Inbox warm-up**:
 - Warm up every new inbox for at least 30 days before sending real emails
-- Use automated warm-up tools (Instantly handles this natively)
+- Use automated warm-up tools built into your sending platform
 - Do not skip warm-up even if you are in a hurry, reputation damage takes weeks to recover
 
 **Sending volume limits**:
@@ -56,22 +56,6 @@ These are table stakes. Skip any one of them and your emails land in spam regard
 - Monitor bounce rate continuously, above 3% signals a data quality problem
 - Remove bounces and unsubscribes immediately
 - Do not re-send to contacts who have not opened after 3 touches
-
----
-
-## Recommended Tool Stack
-
-| Tool | Role |
-|---|---|
-| Clay | Enrichment orchestration, pulls from multiple data sources, builds signal-based lists |
-| Instantly | Sending infrastructure, inbox warm-up, domain rotation, volume throttling |
-| Prospeo | Contact verification and data enrichment |
-| Expandi | LinkedIn outreach automation (complement to email sequences) |
-| Apify | Web scraping for custom signal detection |
-| PredictLeads | Buying signal data (hiring, funding, tech changes) |
-| FullEnrich | Waterfall enrichment for contact data |
-
-**Stack principle**: Clay orchestrates everything. Instantly handles sending and deliverability. The other tools feed Clay with data.
 
 ---
 

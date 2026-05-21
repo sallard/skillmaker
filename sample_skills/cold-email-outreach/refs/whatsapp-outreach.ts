@@ -36,9 +36,4 @@ Each thread requires active management. One person can handle 50-100 active What
 
 Skip WhatsApp if your target market is primarily North America, where email and phone dominate over WhatsApp.
 
-## Tool Stack
-
-- lemlist: WhatsApp integration and phone number enrichment via waterfall
-- CRM (HubSpot, Pipedrive, Salesforce): log WhatsApp threads alongside email history
-- Cost to connect: ~$20 to link a phone number to lemlist
 `

@@ -9,8 +9,8 @@ export const body = `
 
 Before mapping your full TAM, identify these 3 warm segments first:
 - Brand-engaged companies: website visitors, LinkedIn post reactors, email openers. They already know you. Outreach feels natural, not intrusive.
-- Lookalike companies: same industry, size, tech stack, and growth trajectory as your top 5 current clients. Use Clay or Apollo to find them.
-- Intent-signal companies: organizations actively researching solutions like yours, hiring for roles that signal a need, or evaluating competitors. Tools: PredictLeads, Common Room.
+- Lookalike companies: same industry, size, tech stack, and growth trajectory as your top 5 current clients.
+- Intent-signal companies: organizations actively researching solutions like yours, hiring for roles that signal a need, or evaluating competitors.
 
 ## Signal-Based Targeting
 
@@ -22,7 +22,7 @@ Combine multiple public signals to infer a specific pain point. Example for HR S
 
 If both signals are present, the company has a retention problem. The email writes itself. This approach produced 3x the reply rate of the same offer sent to generic "VP HR, 200-500 employees" lists.
 
-Build signal combinations in Clay, pulling from PredictLeads, Common Room, LinkedIn, and Glassdoor. The upfront work pays for itself in reply quality.
+Build signal combinations by pulling from job boards, review sites, and social platforms. The upfront work pays for itself in reply quality.
 
 ## TAM Mapping
 
@@ -31,7 +31,7 @@ Once you have your warm segments, map every company that fits your ICP. This is 
 Rules:
 - Deduplicate before every campaign. Reaching the same person twice from different sequences kills sender reputation.
 - Refresh every quarter. 15-20% of list data decays per quarter (companies change, leadership shifts, organizations close).
-- Use Clay, Wiza, Prospeo for account lists. Filter by company size, geography, industry, revenue, tech stack.
+- Filter account lists by company size, geography, industry, revenue, and tech stack using enrichment providers.
 
 ## Tier 1, Manual Multichannel (Dream Clients)
 
@@ -39,19 +39,19 @@ Write the first 25 messages by hand. Do not skip this even if it is slow.
 
 Manual writing forces you to notice patterns: which angles get replies, which job titles respond, which data points feel relevant. Track every reply and non-reply. After 25 messages you will have a pattern set.
 
-Then extract: take the winning angles and data points and turn them into Clay variables. This is how manual work becomes scale. Personalization across 1,000 prospects feels 1:1 because it was born from 1:1 work. Skipping this means scaling assumptions, not proven approaches.
+Then extract: take the winning angles and data points and turn them into enrichment variables for automated personalization. This is how manual work becomes scale. Personalization across 1,000 prospects feels 1:1 because it was born from 1:1 work. Skipping this means scaling assumptions, not proven approaches.
 
-Channels: phone (Nooks), LinkedIn, email, all coordinated around the same account.
+Channels: phone, LinkedIn, email, all coordinated around the same account.
 
 ## Tier 2, AI-Personalized Multichannel (Good Fits)
 
-Automate with Clay + lemlist. Every message must pass this test: "Would this be valuable to the prospect even if they ignore me?"
+Automate enrichment and sequencing. Every message must pass this test: "Would this be valuable to the prospect even if they ignore me?"
 
 Value-first opening strategy: think about what you would do in week 1 if you signed them as a client, then do that before they sign. For example, build a niche lead list for their exact ICP and hand it to them as your opening move. This demonstrates competence rather than claiming it.
 
 ## Tier 3, Email at Scale (Broad Fits)
 
-Use Instantly. Tier 3 is the experimental playground.
+Tier 3 is the experimental playground.
 
 Run 4-5 message variations simultaneously. Test copywriting frameworks, subject lines, CTAs, and offer angles. Let reply rates tell you what works. What converts at Tier 3 gets refined and promoted to Tier 2 sequences.
 

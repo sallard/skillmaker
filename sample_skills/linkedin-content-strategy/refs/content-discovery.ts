@@ -1,6 +1,6 @@
 export const slug = 'content-discovery'
 export const title = 'Content Discovery & Format Reverse Engineering'
-export const triggers = ['content discovery', 'what to post', 'post ideas', 'viral format', 'reverse engineer', 'content inspiration', 'scripe', 'twitter', 'linkedin lag', 'trending topic']
+export const triggers = ['content discovery', 'what to post', 'post ideas', 'viral format', 'reverse engineer', 'content inspiration', 'twitter', 'linkedin lag', 'trending topic', 'outlier posts']
 export const token_budget = 1000
 export const body = `
 # Content Discovery & Format Reverse Engineering
@@ -11,7 +11,7 @@ The number one reason people fail at LinkedIn: they don't know what great looks 
 
 Search direct competitors and accounts your ICP follows. If no direct competitors exist, search by keywords ("video production", "content marketing", "B2B sales") and rank by engagement.
 
-## Step 2, Filter for outliers using Scripe
+## Step 2, Filter for outliers
 
 - Filter: 300+ likes, last 3 months
 - Surfaces only genuine outliers, not average posts
