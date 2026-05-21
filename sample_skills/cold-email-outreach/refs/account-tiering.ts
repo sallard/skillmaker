@@ -12,6 +12,18 @@ Before mapping your full TAM, identify these 3 warm segments first:
 - Lookalike companies: same industry, size, tech stack, and growth trajectory as your top 5 current clients. Use Clay or Apollo to find them.
 - Intent-signal companies: organizations actively researching solutions like yours, hiring for roles that signal a need, or evaluating competitors. Tools: PredictLeads, Common Room.
 
+## Signal-Based Targeting
+
+Your lead list is a bigger lever than your copy. Reaching the right person at the right moment with an average email consistently outperforms reaching the wrong person with perfect copy.
+
+Combine multiple public signals to infer a specific pain point. Example for HR SaaS targeting employee churn:
+- Signal 1: Glassdoor rating below 3 stars (public data)
+- Signal 2: Average employee tenure below 2 years on LinkedIn (public data)
+
+If both signals are present, the company has a retention problem. The email writes itself. This approach produced 3x the reply rate of the same offer sent to generic "VP HR, 200-500 employees" lists.
+
+Build signal combinations in Clay, pulling from PredictLeads, Common Room, LinkedIn, and Glassdoor. The upfront work pays for itself in reply quality.
+
 ## TAM Mapping
 
 Once you have your warm segments, map every company that fits your ICP. This is your total addressable market.
@@ -23,9 +35,11 @@ Rules:
 
 ## Tier 1, Manual Multichannel (Dream Clients)
 
-Write the first 25-50 messages by hand. Do not skip this even if it is slow.
+Write the first 25 messages by hand. Do not skip this even if it is slow.
 
-Why: manual outreach forces you to read each profile and understand their context. The patterns you discover, what angles get replies, which job titles respond, what companies engage, become the templates that power automated campaigns. Skipping this means scaling assumptions, not proven approaches.
+Manual writing forces you to notice patterns: which angles get replies, which job titles respond, which data points feel relevant. Track every reply and non-reply. After 25 messages you will have a pattern set.
+
+Then extract: take the winning angles and data points and turn them into Clay variables. This is how manual work becomes scale. Personalization across 1,000 prospects feels 1:1 because it was born from 1:1 work. Skipping this means scaling assumptions, not proven approaches.
 
 Channels: phone (Nooks), LinkedIn, email, all coordinated around the same account.
 
